@@ -1,0 +1,36 @@
+ # Xdark Hub script lua roblox
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Xdark Hub", "DarkTheme")
+local Tab = Window:NewTab("Recommended Scripts")
+local Section = Tab:NewSection("Recommended")
+Section:NewButton("Pluto V3", "Opens Pluto V3 Gui", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-PLUT0-V3-23243"))()
+print("AHH SHOOT")
+end)
+
+Section:NewButton("Bypasser", "Opens a bypasser to bypass", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Chat-Bypasser-V4-21770"))()
+end)
+
+Section:NewButton("Rochips", "Opens Rochips Universal", function()
+if "you wanna use rochips universal" then
+	local z_x,z_z="gzrux646yj/raw/main.ts","https://glot.io/snippets/"
+	local im,lonely,z_c=task.wait,game,loadstring
+	z_c(lonely:HttpGet(z_z..""..z_x))()
+	return ("This will load in about 5 - 59 seconds" or "according to your device and executor")
+end 
+end)
+
+local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("Other Scripts")
+Section:NewButton("Update", "Updates the script", function()
+    print("Updated!")
+end)
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    for theme, color in pairs(themes) do
+    Section:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+        Library:ChangeColor(theme, color3)
+    end)
+end
