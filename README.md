@@ -1,2 +1,2 @@
 # Lua
-Lua code.
+Code For Exploiters
