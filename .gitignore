@@ -1,5 +1,2 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+import("https://github.com"):Images.file=jpg(
+.jpg)
