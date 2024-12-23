@@ -20,3 +20,18 @@ if "you wanna use rochips universal" then
 	return ("This will load in about 5 - 59 seconds" or "according to your device and executor")
 end 
 end)
+
+local Tab = Window:NewTab("Other")
+local Section = Tab:NewSection("Other Scripts")
+Section:NewButton("Update", "Updates the script", function()
+    print("Updated!")
+end)
+
+local Tab = Window:NewTab("Troll")
+local Section = Tab:NewSection("Trolling Scripts")
+Section:NewButton("Fling All And Rejoin", "flings all and rejoins", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fling-all-and-rejoin-script-19734"))()
+end)
+
+
+
